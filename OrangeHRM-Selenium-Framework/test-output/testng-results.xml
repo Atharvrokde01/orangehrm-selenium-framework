@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-26T22:58:08 IST" name="OrangeHRM Suite" finished-at="2026-05-26T22:58:32 IST" duration-ms="24393">
+  <suite started-at="2026-05-28T18:56:41 IST" name="OrangeHRM Suite" finished-at="2026-05-28T18:57:02 IST" duration-ms="21205">
     <groups>
     </groups>
-    <test started-at="2026-05-26T22:58:08 IST" name="Chrome Test" finished-at="2026-05-26T22:58:20 IST" duration-ms="12434">
+    <test started-at="2026-05-28T18:56:41 IST" name="Chrome Test" finished-at="2026-05-28T18:56:52 IST" duration-ms="11396">
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="start(java.lang.String)[pri:0, instance:testcases.LoginTest@2d1ef81a]" started-at="2026-05-26T22:58:08 IST" name="start" finished-at="2026-05-26T22:58:15 IST" duration-ms="6832" status="PASS">
+        <test-method is-config="true" signature="start(java.lang.String)[pri:0, instance:testcases.LoginTest@2d1ef81a]" started-at="2026-05-28T18:56:41 IST" name="start" finished-at="2026-05-28T18:56:47 IST" duration-ms="6155" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="titleCheck()[pri:1, instance:testcases.LoginTest@2d1ef81a]" started-at="2026-05-26T22:58:15 IST" name="titleCheck" finished-at="2026-05-26T22:58:15 IST" duration-ms="90" status="PASS">
+        <test-method signature="titleCheck()[pri:1, instance:testcases.LoginTest@2d1ef81a]" started-at="2026-05-28T18:56:47 IST" name="titleCheck" finished-at="2026-05-28T18:56:47 IST" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleCheck -->
-        <test-method signature="textCheck()[pri:2, instance:testcases.LoginTest@2d1ef81a]" started-at="2026-05-26T22:58:15 IST" name="textCheck" finished-at="2026-05-26T22:58:15 IST" depends-on-methods="testcases.LoginTest.titleCheck" duration-ms="279" status="PASS">
+        <test-method signature="textCheck()[pri:2, instance:testcases.LoginTest@2d1ef81a]" started-at="2026-05-28T18:56:47 IST" name="textCheck" finished-at="2026-05-28T18:56:48 IST" depends-on-methods="testcases.LoginTest.titleCheck" duration-ms="519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- textCheck -->
-        <test-method signature="loginCheck()[pri:3, instance:testcases.LoginTest@2d1ef81a]" started-at="2026-05-26T22:58:15 IST" name="loginCheck" finished-at="2026-05-26T22:58:17 IST" depends-on-methods="testcases.LoginTest.textCheck" duration-ms="1789" status="PASS">
+        <test-method signature="loginCheck()[pri:3, instance:testcases.LoginTest@2d1ef81a]" started-at="2026-05-28T18:56:48 IST" name="loginCheck" finished-at="2026-05-28T18:56:49 IST" depends-on-methods="testcases.LoginTest.textCheck" duration-ms="1636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginCheck -->
-        <test-method signature="logoutCheck()[pri:4, instance:testcases.LoginTest@2d1ef81a]" started-at="2026-05-26T22:58:17 IST" name="logoutCheck" finished-at="2026-05-26T22:58:20 IST" depends-on-methods="testcases.LoginTest.loginCheck" duration-ms="3208" status="PASS">
+        <test-method signature="logoutCheck()[pri:4, instance:testcases.LoginTest@2d1ef81a]" started-at="2026-05-28T18:56:49 IST" name="logoutCheck" finished-at="2026-05-28T18:56:52 IST" depends-on-methods="testcases.LoginTest.loginCheck" duration-ms="2800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutCheck -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testcases.LoginTest@2d1ef81a]" started-at="2026-05-26T22:58:20 IST" name="close" finished-at="2026-05-26T22:58:20 IST" duration-ms="174" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.LoginTest@2d1ef81a]" started-at="2026-05-28T18:56:52 IST" name="close" finished-at="2026-05-28T18:56:52 IST" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- testcases.LoginTest -->
     </test> <!-- Chrome Test -->
-    <test started-at="2026-05-26T22:58:20 IST" name="Edge Test" finished-at="2026-05-26T22:58:32 IST" duration-ms="11917">
+    <test started-at="2026-05-28T18:56:52 IST" name="Edge Test" finished-at="2026-05-28T18:57:02 IST" duration-ms="9773">
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="start(java.lang.String)[pri:0, instance:testcases.LoginTest@247bddad]" started-at="2026-05-26T22:58:20 IST" name="start" finished-at="2026-05-26T22:58:26 IST" duration-ms="6079" status="PASS">
+        <test-method is-config="true" signature="start(java.lang.String)[pri:0, instance:testcases.LoginTest@247bddad]" started-at="2026-05-28T18:56:52 IST" name="start" finished-at="2026-05-28T18:56:57 IST" duration-ms="4627" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,23 +53,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="titleCheck()[pri:1, instance:testcases.LoginTest@247bddad]" started-at="2026-05-26T22:58:26 IST" name="titleCheck" finished-at="2026-05-26T22:58:27 IST" duration-ms="12" status="PASS">
+        <test-method signature="titleCheck()[pri:1, instance:testcases.LoginTest@247bddad]" started-at="2026-05-28T18:56:57 IST" name="titleCheck" finished-at="2026-05-28T18:56:57 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleCheck -->
-        <test-method signature="textCheck()[pri:2, instance:testcases.LoginTest@247bddad]" started-at="2026-05-26T22:58:27 IST" name="textCheck" finished-at="2026-05-26T22:58:27 IST" depends-on-methods="testcases.LoginTest.titleCheck" duration-ms="334" status="PASS">
+        <test-method signature="textCheck()[pri:2, instance:testcases.LoginTest@247bddad]" started-at="2026-05-28T18:56:57 IST" name="textCheck" finished-at="2026-05-28T18:56:57 IST" depends-on-methods="testcases.LoginTest.titleCheck" duration-ms="325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- textCheck -->
-        <test-method signature="loginCheck()[pri:3, instance:testcases.LoginTest@247bddad]" started-at="2026-05-26T22:58:27 IST" name="loginCheck" finished-at="2026-05-26T22:58:29 IST" depends-on-methods="testcases.LoginTest.textCheck" duration-ms="1993" status="PASS">
+        <test-method signature="loginCheck()[pri:3, instance:testcases.LoginTest@247bddad]" started-at="2026-05-28T18:56:57 IST" name="loginCheck" finished-at="2026-05-28T18:56:59 IST" depends-on-methods="testcases.LoginTest.textCheck" duration-ms="1613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginCheck -->
-        <test-method signature="logoutCheck()[pri:4, instance:testcases.LoginTest@247bddad]" started-at="2026-05-26T22:58:29 IST" name="logoutCheck" finished-at="2026-05-26T22:58:32 IST" depends-on-methods="testcases.LoginTest.loginCheck" duration-ms="3265" status="PASS">
+        <test-method signature="logoutCheck()[pri:4, instance:testcases.LoginTest@247bddad]" started-at="2026-05-28T18:56:59 IST" name="logoutCheck" finished-at="2026-05-28T18:57:02 IST" depends-on-methods="testcases.LoginTest.loginCheck" duration-ms="2939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutCheck -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testcases.LoginTest@247bddad]" started-at="2026-05-26T22:58:32 IST" name="close" finished-at="2026-05-26T22:58:32 IST" duration-ms="205" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:testcases.LoginTest@247bddad]" started-at="2026-05-28T18:57:02 IST" name="close" finished-at="2026-05-28T18:57:02 IST" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
