@@ -9,8 +9,8 @@ import base.BaseClass;
 
 public class LoginPage extends BaseClass {
 
-	@FindBy(xpath = "//h5")
-	WebElement titletext;
+	@FindBy(xpath = "//h5[text()='Login']")
+	WebElement titleText;
 
 	@FindBy(xpath = "//input[@name='username']")
 	WebElement username;
@@ -22,21 +22,23 @@ public class LoginPage extends BaseClass {
 	WebElement login;
 
 	// Constructor
-	public LoginPage()
-	{
+	public LoginPage() {
+
 		PageFactory.initElements(driver, this);
 	}
 
-	// Title Verify
-	public boolean titleverify(String expTitle)
-	{
-		return expTitle.equals(ActionDriver.fetchTitle());
+	// Verify Page Title
+	public boolean verifyTitle(String expTitle) {
+
+		String actualTitle = ActionDriver.fetchTitle();
+
+		return expTitle.equals(actualTitle);
 	}
 
-	// Text Verify
-	public boolean textverify(String expText)
-	{
-		String actualText = ActionDriver.fetchText(titletext);
+	// Verify Login Text
+	public boolean verifyText(String expText) {
+
+		String actualText = ActionDriver.fetchText(titleText);
 
 		System.out.println(actualText);
 
@@ -44,22 +46,19 @@ public class LoginPage extends BaseClass {
 	}
 
 	// Login Function
-	public DashboardPage loginfunction(String userid, String pass)
-	{
+	public DashboardPage loginFunction(String userid, String pass) {
+
 		boolean status1 = ActionDriver.enterData(username, userid);
 
 		boolean status2 = ActionDriver.enterData(password, pass);
 
-		if(status1 && status2)
-		{
-			ActionDriver.buttonaction(login);
+		if (status1 && status2) {
+
+			ActionDriver.buttonAction(login);
 
 			return new DashboardPage();
 		}
 
-		else
-		{
-			return null;
-		}
+		return null;
 	}
 }

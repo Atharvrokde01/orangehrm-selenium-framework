@@ -2,16 +2,23 @@ package base;
 
 public class ConstantValues {
 
-	public static String loginPageTitle = "OrangeHRM";
+	// Application URL
+	public static final String URL =
+			"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
 
-	public static String loginText = "Login";
+	// Login Page
+	public static final String LOGIN_PAGE_TITLE = "OrangeHRM";
 
-	public static String username = "Admin";
+	public static final String LOGIN_TEXT = "Login";
 
-	public static String password = "admin123";
+	// Login Credentials
+	public static final String USERNAME = "Admin";
 
-	public static String dashboardText = "Dashboard";
+	public static final String PASSWORD = "admin123";
 
-	public static String logoutPageText = "Login";
+	// Dashboard Page
+	public static final String DASHBOARD_TEXT = "Dashboard";
 
+	// Logout Page
+	public static final String LOGOUT_PAGE_TEXT = "Login";
 }

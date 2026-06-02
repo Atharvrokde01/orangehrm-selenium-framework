@@ -11,43 +11,53 @@ public class BaseClass {
 
 	public static WebDriver driver;
 
-	public static void setup(String browser)
-	{
-		switch(browser.toLowerCase())
-		{
-		case "chrome" :
+	// Browser Setup
+	public static void setup(String browser) {
+
+		if (browser == null) {
+
+			throw new RuntimeException("Browser value is null");
+		}
+
+		switch (browser.toLowerCase()) {
+
+		case "chrome":
 
 			driver = new ChromeDriver();
 			break;
 
-		case "edge" :
+		case "edge":
 
 			driver = new EdgeDriver();
 			break;
 
-		case "firefox" :
+		case "firefox":
 
 			driver = new FirefoxDriver();
 			break;
 
-		default :
+		default:
 
-			System.out.println("Invalid Browser");
-			break;
+			throw new RuntimeException("Invalid Browser Name : " + browser);
 		}
 
 		driver.manage().window().maximize();
 
+		driver.manage().deleteAllCookies();
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.get(ConstantValues.URL);
 	}
 
-	public static void teardown()
-	{
-		if(driver != null)
-		{
+	// Browser Close
+	public static void teardown() {
+
+		if (driver != null) {
+
 			driver.quit();
+
+			driver = null;
 		}
 	}
 }

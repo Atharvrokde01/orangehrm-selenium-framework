@@ -10,7 +10,7 @@ import base.ConstantValues;
 
 public class DashboardPage extends BaseClass {
 
-	@FindBy(xpath = "//h6")
+	@FindBy(xpath = "//h6[text()='Dashboard']")
 	WebElement dashboardText;
 
 	@FindBy(xpath = "//p[@class='oxd-userdropdown-name']")
@@ -20,31 +20,35 @@ public class DashboardPage extends BaseClass {
 	WebElement logout;
 
 	// Constructor
-	public DashboardPage()
-	{
+	public DashboardPage() {
+
 		PageFactory.initElements(driver, this);
 	}
 
 	// Dashboard Verification
-	public boolean dashboardVerify()
-	{
-		return ActionDriver.fetchText(dashboardText)
-				.equals(ConstantValues.dashboardText);
+	public boolean dashboardVerify() {
+
+		String actualText = ActionDriver.fetchText(dashboardText);
+
+		return actualText != null &&
+				actualText.equals(ConstantValues.DASHBOARD_TEXT);
 	}
 
 	// Logout Function
-	public boolean logoutFunction()
-	{
-		boolean status1 = ActionDriver.buttonaction(profile);
+	public boolean logoutFunction() {
+
+		boolean status1 = ActionDriver.buttonAction(profile);
 
 		try {
+
 			Thread.sleep(2000);
-		}
-		catch (Exception e) {
 
+		} catch (InterruptedException e) {
+
+			e.printStackTrace();
 		}
 
-		boolean status2 = ActionDriver.buttonaction(logout);
+		boolean status2 = ActionDriver.buttonAction(logout);
 
 		return status1 && status2;
 	}
